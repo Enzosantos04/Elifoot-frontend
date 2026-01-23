@@ -81,7 +81,7 @@ export default function Signup() {
 
             <button
               type="submit"
-              className="mt-4 w-full rounded-2xl bg-black px-6 py-4 text-2xl font-extrabold uppercase tracking-tight text-white transition hover:bg-neutral-900 cursor-pointer"
+              className="mt-4 w-full rounded-2xl bg-black px-6 py-4 text-xl font-extrabold uppercase tracking-tight text-white transition hover:bg-neutral-900 cursor-pointer"
             >
               Cadastrar
             </button>
