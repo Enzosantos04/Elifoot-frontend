@@ -9,8 +9,8 @@ export const metadata = {
 
 export default function Signup() {
   return (
-    <main className="grid min-h-screen bg-white text-slate-900 grid-cols-1 sm:grid-cols-[35%,65%] lg:grid-cols-[30%,70%]">
-      <div className="flex flex-col justify-center gap-10 bg-black px-10 py-12 text-white lg:px-12">
+    <main className="grid min-h-screen bg-white text-slate-900 grid-cols-2 lg:grid-cols-[35%_65%]">
+      <div className="flex flex-col justify-center gap-10 bg-black px-12 py-12 text-white lg:px-56">
         <div className="space-y-10">
           <div className="flex items-center gap-3">
             <Image
@@ -23,8 +23,9 @@ export default function Signup() {
           </div>
 
           <div className="space-y-4">
-            <h1 className="text-3xl font-extrabold leading-snug">
-              Bem-vindo de volta!
+            <h1 className="text-4xl font-extrabold leading-snug">
+              Bem-vindo <br />
+              de volta!
             </h1>
             <p className="max-w-xs text-lg text-gray-200">
               Acesse sua conta agora mesmo.
@@ -35,7 +36,7 @@ export default function Signup() {
         <div className="space-y-4">
           <Link
             href="/"
-            className="flex w-full items-center justify-center rounded-2xl border-2 border-white px-6 py-4 text-base font-bold uppercase tracking-tight text-white transition hover:bg-white hover:text-black"
+            className="flex w-1/2 items-center justify-center rounded-2xl border-2 border-white px-6 py-4 text-base font-bold uppercase tracking-tight text-white transition hover:bg-white hover:text-black"
           >
             Entrar
           </Link>
