@@ -5,11 +5,6 @@ import { InputField } from "../components/signup/InputField";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
-// export const metadata = {
-//   title: "Cadastro | Elifoot",
-//   description: "Crie sua conta para acessar o Elifoot.",
-// };
-
 export default function Signup() {
   const router = useRouter();
   const [formData, setFormData] = useState({
