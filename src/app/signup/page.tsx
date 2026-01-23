@@ -1,13 +1,27 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { InputField } from "../components/signup/InputField";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
-export const metadata = {
-  title: "Cadastro | Elifoot",
-  description: "Crie sua conta para acessar o Elifoot.",
-};
+// export const metadata = {
+//   title: "Cadastro | Elifoot",
+//   description: "Crie sua conta para acessar o Elifoot.",
+// };
 
 export default function Signup() {
+  const router = useRouter();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("Dados do formulário:", formData);
+  };
   return (
     <main className="grid min-h-screen bg-white text-slate-900 grid-cols-2 lg:grid-cols-[35%_65%]">
       <div className="flex flex-col justify-center gap-10 bg-black px-12 py-12 text-white lg:px-56">
@@ -56,7 +70,7 @@ export default function Signup() {
             <p className="text-base text-gray-500">Preencha seus dados</p>
           </div>
 
-          <form className="space-y-4">
+          <form className="space-y-4" onSubmit={handleSubmit}>
             <InputField
               id="name"
               name="name"
