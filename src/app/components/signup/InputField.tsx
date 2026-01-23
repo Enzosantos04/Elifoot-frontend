@@ -35,6 +35,7 @@ export function InputField({
         name={name}
         type={type}
         placeholder={placeholder}
+        required
         className="w-full rounded-xl bg-[#f5f5f5] px-4 py-4 pl-12 text-sm text-gray-700 placeholder:text-gray-400  focus:outline-black"
       />
     </div>
