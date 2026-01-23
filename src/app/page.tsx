@@ -8,6 +8,7 @@ import { useState } from "react";
 export default function Home() {
   const router = useRouter();
   const [formData, setFormData] = useState({ name: "", password: "" });
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Dados do formulário:", formData);
@@ -15,7 +16,6 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-black px-6 text-white">
       <div className="w-full max-w-md space-y-8">
-        {/* Logo */}
         <div className="flex justify-center">
           <Image
             src="/logo.svg"
@@ -26,15 +26,12 @@ export default function Home() {
           />
         </div>
 
-        {/* Título */}
         <div className="space-y-2 text-center">
           <h1 className="text-3xl font-bold">Bem-vindo de volta!</h1>
           <p className="text-sm text-gray-400">Acesse a sua conta</p>
         </div>
 
-        {/* Formulário */}
         <form className="space-y-4">
-          {/* Campo Nome */}
           <div className="relative">
             <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4">
               <svg
@@ -96,7 +93,6 @@ export default function Home() {
             />
           </div>
 
-          {/* Links */}
           <div className="flex items-center justify-between text-sm">
             <button
               type="button"
@@ -112,7 +108,6 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* Botão Entrar */}
           <button
             type="submit"
             className="w-full rounded-xl bg-linear-to-r from-orange-500 to-yellow-500 py-4 text-base font-bold text-black transition hover:from-orange-400 hover:to-yellow-400 cursor-pointer"
