@@ -31,7 +31,7 @@ export default function Home() {
           <p className="text-sm text-gray-400">Acesse a sua conta</p>
         </div>
 
-        <form className="space-y-4">
+        <form className="space-y-4" onSubmit={handleSubmit}>
           <div className="relative">
             <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4">
               <svg
@@ -62,7 +62,6 @@ export default function Home() {
             />
           </div>
 
-          {/* Campo Senha */}
           <div className="relative">
             <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4">
               <svg
