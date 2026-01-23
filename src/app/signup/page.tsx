@@ -36,13 +36,13 @@ export default function Signup() {
         <div className="space-y-4">
           <Link
             href="/"
-            className="flex w-1/2 items-center justify-center rounded-2xl border-2 border-white px-6 py-4 text-base font-bold uppercase tracking-tight text-white transition hover:bg-white hover:text-black"
+            className="flex w-64 items-center justify-center rounded-2xl border-2 border-white px-6 py-4 text-2xl font-extrabold uppercase tracking-tight text-white transition hover:bg-white hover:text-black "
           >
             Entrar
           </Link>
           <button
             type="button"
-            className="text-sm text-gray-300 hover:text-white"
+            className="text-sm text-gray-300 hover:text-white ml-12 mt-12 cursor-pointer"
           >
             Esqueci minha senha.
           </button>
@@ -81,7 +81,7 @@ export default function Signup() {
 
             <button
               type="submit"
-              className="mt-4 w-full rounded-2xl bg-black px-6 py-4 text-base font-extrabold uppercase tracking-tight text-white transition hover:bg-neutral-900"
+              className="mt-4 w-full rounded-2xl bg-black px-6 py-4 text-2xl font-extrabold uppercase tracking-tight text-white transition hover:bg-neutral-900 cursor-pointer"
             >
               Cadastrar
             </button>
