@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Elifoot Manager",
+  title: "Elifoot",
   description:
     "Gerencie seu clube com o Elifoot: táticas, elenco e finanças em um só painel.",
 };
