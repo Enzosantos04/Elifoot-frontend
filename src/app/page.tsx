@@ -10,7 +10,6 @@ export default function Home() {
   const [formData, setFormData] = useState({ name: "", password: "" });
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Aqui você pode adicionar a lógica de autenticação
     console.log("Dados do formulário:", formData);
   };
   return (
