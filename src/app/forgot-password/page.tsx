@@ -31,7 +31,7 @@ export default function ForgotPassword() {
 
           <div className="space-y-4">
             <h1 className="text-4xl font-extrabold leading-snug">
-              Esqueceu sua senha?
+              Recuperou sua senha?
             </h1>
             <p className="max-w-xs text-lg text-gray-200">
               Acesse sua conta agora mesmo.
@@ -46,35 +46,29 @@ export default function ForgotPassword() {
           >
             Entrar
           </Link>
-          <button
-            type="button"
-            className="text-sm text-gray-300 hover:text-white ml-12 mt-12 cursor-pointer"
-          >
-            Esqueci minha senha.
-          </button>
         </div>
       </div>
 
       <div className="flex items-center justify-center px-6 py-12 lg:px-16">
         <div className="w-full max-w-2xl space-y-8">
           <div className="space-y-2 text-center">
-            <h2 className="text-3xl font-extrabold">Crie sua conta</h2>
-            <p className="text-base text-gray-500">Preencha seus dados</p>
+            <h2 className="text-3xl font-extrabold">Recupere sua senha</h2>
+            <p className="text-base text-gray-500">Preencha seu email</p>
           </div>
 
           <form className="space-y-4" onSubmit={handleSubmit}>
             <InputField
-              id="name"
-              name="name"
-              type="text"
-              placeholder="Seu Nome"
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Seu Email"
               iconPath="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
             />
             <button
               type="submit"
               className="mt-4 w-full rounded-2xl bg-black px-6 py-4 text-xl font-extrabold uppercase tracking-tight text-white transition hover:bg-neutral-900 cursor-pointer"
             >
-              Cadastrar
+              Recuperar Senha
             </button>
           </form>
         </div>
