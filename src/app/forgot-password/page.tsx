@@ -46,6 +46,13 @@ export default function ForgotPassword() {
           >
             Entrar
           </Link>
+          <Link
+            href="/signup"
+            type="button"
+            className="text-sm text-gray-300 hover:text-white ml-12 cursor-pointer"
+          >
+            Criar uma nova conta.
+          </Link>
         </div>
       </div>
 
