@@ -49,12 +49,13 @@ export default function Signup() {
           >
             Entrar
           </Link>
-          <button
+          <Link
+            href="/forgot-password"
             type="button"
             className="text-sm text-gray-300 hover:text-white ml-12 mt-12 cursor-pointer"
           >
             Esqueci minha senha.
-          </button>
+          </Link>
         </div>
       </div>
 
